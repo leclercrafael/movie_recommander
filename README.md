@@ -25,3 +25,6 @@ Nous avons évité l'utilisation directe des fonctions de haut niveau pour recon
 Le projet est organisé pour séparer le code réutilisable de l'analyse exploratoire :
 
 * **`recommender_utils.py`** : Contient toutes les fonctions Python pures (`myCountVectorizer`, `mycosinussimilarity`, etc.) développées *from scratch*.
+* **`Movie_Recommender.ipynb`** : Le notebook Jupyter principal. Il sert à charger les données, exécuter les fonctions du fichier `recommender_utils.py`, tester les étapes, et présenter les résultats des recommandations.
+* **`ml-latest-small/`** : Dossier contenant le jeu de données MovieLens.
+
