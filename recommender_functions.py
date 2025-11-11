@@ -123,11 +123,11 @@ def mycosinussimilarity(b : list) -> list :
 
     return out
 
-def get_title_from_index (df : pd.DataFrame, index) : 
+def get_title_from_index (df : pd.DataFrame, index) -> pd.Series: 
     mask = (df.index == index)
     return df[mask]['title'].values[0]
 
-def get_index_from_title(df : pd.DataFrame, title):
+def get_index_from_title(df : pd.DataFrame, title) -> pd.Series:
     mask = (df.title == title)
     return df[mask]["index"].values[0]
 
