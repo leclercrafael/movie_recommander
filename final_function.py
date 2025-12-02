@@ -47,10 +47,8 @@ movie_index = rf.get_index_from_title(title=movie_liked, df=movies)
 
 similar_movies =  list(enumerate(cosined[movie_index]))
 
-## Step 7: Get a list of similar movies in descending order of similarity score
 sorted_similar_movies = sorted(similar_movies,key=lambda x:x[1],reverse=True)
 
-## Step 8: Print titles of first 50 movies
 i=0
 for element in sorted_similar_movies:
 		print(rf.get_title_from_index(df=movies, index=element[0]))
